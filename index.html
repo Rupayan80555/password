@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassX - Personal Password manager</title>
+    <link rel="shortcut icon" href="/img/gopal.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Pass-X</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="acc">acc</a></li>
+      </ul>
+    </nav>
+    <div class="contaner">
+      <h1>Password Manager</h1>
+      <p>
+        Our Client-Secure Password Manager is a powerful yet user-friendly tool
+        designed to simplify and enhance your online security. With cyber
+        threats on the rise, managing your passwords is more critical than ever,
+        and our manager ensures that your digital life remains safe and
+        hassle-free. This secure and intuitive platform allows you to securely
+        store, organize, and access your website URLs, usernames, and passwords
+        from any device with ease. Your data is encrypted, protecting it from
+        unauthorized access. Our built-in password generator helps you create
+        strong and unique passwords, bolstering your online defenses. With
+        features like password deletion, regular backups, and the ability to
+        share passwords securely with trusted contacts or team members, our
+        password manager provides all the tools you need. Say goodbye to
+        password-related stress and hello to a more secure and streamlined
+        online experience. Experience the peace of mind that comes with knowing
+        your sensitive information is in good hands. Simplify your digital life
+        with our Client-Secure Password Manager today.
+      </p>
+      
+      <h2>Add Your Data</h2>
+      <form action="/submit" method="post">
+        <!-- for user input WebsiteName  -->
+        <label for="WebsiteName">WebsiteName :</label>
+
+        <input
+          type="text"
+          id="Website"
+          required
+          placeholder="     Add WebsiteName"
+        />
+        <br /> <br>
+        <!-- for user input name  -->
+        <label for="UserName">UserName :</label>
+
+        <input
+          type="text"
+          id="UserName"
+          required
+          placeholder="     Add UserName"
+        />
+        <br /> <br>
+        <!-- for user input password -->
+
+        <label for="Password">Password :</label>
+        <input
+          type="password"
+          id="Password"
+          placeholder="    Add your Password"
+        />
+        <br />
+        <button class="btn">Submit</button>
+      </form>
+
+      <h2>Your Added Data</h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>UserName</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
